@@ -1,1 +1,49 @@
-/*  your css code here. If applicable */
+/* Global Reset */
+body {
+  background-color: green;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Image Styling */
+.imageContainer img {
+  width: 400px;
+  height: 200px;
+  display: block;
+  margin-left:10px;
+	margin-top:10px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 600px 200px;
+  grid-template-rows: auto auto;
+  /* gap: 20px; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+  padding: 10px;
+}
+
+.cell.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.cell.text {
+  background-color: #e6f2ff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
